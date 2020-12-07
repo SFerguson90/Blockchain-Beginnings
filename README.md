@@ -154,4 +154,4 @@ We can then try to send money from the first node to the second node. The transa
 
 # Congratulations!
 
-Go ahead, and pat yourself on the back. You've established the blockchain network for our bank!
+Go ahead, and pat yourself on the back. You've established a blockchain network!
