@@ -3,7 +3,7 @@
 First, we must download and install the newest Geth Tools and Software. This can be found on geth.ethereum.org.
 The download address is: https://geth.ethereum.org/downloads/
 
-Be sure to check wether you have a Mac or Windows OS, and wether it's 32 or 64-bit.
+Be sure to check wether you have a Mac or Windows OS, and wether it's 32 or 64-bit. If you're using a Windows operating system, you'll want to run the terminal commands using Git Bash.
 
 ##### This is the version I downloaded for Windows 64-bit OS.
 
