@@ -27,25 +27,45 @@ cd into the directory, and run the following command:
 * The fourth piece establishes it as an account
 * The fifth piece nominates that it's new.
 
-After typing in the command, you'll need to create a password. The passwords provided are not recommended, because they're incredibly weak. The program will give you a public addresses for the keys. COPY AND PASTE THESE SOMEWHERE. THEY'RE IMPORTANT
+After typing in the command, you'll need to create a password. The passwords provided are not recommended, because they're incredibly weak. The program will give you a public addresses for the keys.
 
-* FirstNodeName: MasterNode, Password: admin
+COPY AND PASTE THESE SOMEWHERE. THEY'RE IMPORTANT
+
+* FirstNodeName: MasterNode
+* Password: admin
 * Public address of the key: 0x5b02b4d444d5617455bf5dbdEe7446B6dBBFe723
 * Path of the secret key file: MasterNode\keystore\UTC--2020-12-06T21-53-14.993467400Z--5b02b4d444d5617455bf5dbdee7446b6dbbfe723
 
-./geth --datadir zweiterKnoten account new
+`./geth --datadir zweiterKnoten account new`
 
-zweiterKnoten (second node)
-PW: german
-Public address of the key:   0x8130066e626fe4B9eA60675696802ee653194926
-Path of the secret key file: zweiterKnoten\keystore\UTC--2020-12-06T21-58-50.209494000Z--8130066e626fe4b9ea60675696802ee653194926
+* zweiterKnoten (second node)
+* PW: german
+* Public address of the key:   0x8130066e626fe4B9eA60675696802ee653194926
+* Path of the secret key file: zweiterKnoten\keystore\UTC--2020-12-06T21-58-50.209494000Z--8130066e626fe4b9ea60675696802ee653194926
 
-## 2) INITIALIZING EACH NODE
+#### This is what the terminal will look like:
+![Geth3Generating2NewAccounts](Screenshots/Geth3Generating2NewAccounts.png)
+#### This is an example of a notepad with important information
+![Geth4NotesAfterAcctGen](Screenshots/Geth4NotesAfterAcctGen.png)
 
-./geth --datadir MasterNode init zbankdeutschland.json
-./geth --datadir zweiterKnoten init zbankdeutschland.json
+## 2) Establishing the Network
 
-## 3) BEGIN MINING BLOCKS
+Next, we'll want to establish the private network by linking it to the created genesis nodes. You'll need to create a name for the network, using all lowercase letters, no spaces, and no hyphens.
+
+For this example, we'll be creating a Proof-of-Authority network (Clique).
+
+The terminal will look similar to the following picture:
+
+![Geth5GeneratingGenesisBlock](Screenshots/Geth5GeneratingGenesisBlock.png)
+
+![Geth6ExportingGenesisConfig](Screenshots/Geth6ExportingGenesisConfig.png)
+
+## X) INITIALIZING EACH NODE
+
+`./geth --datadir MasterNode init zbankdeutschland.json`
+`./geth --datadir zweiterKnoten init zbankdeutschland.json`
+
+## X) BEGIN MINING BLOCKS
 
 ##### NOTE:
     The "enode: ADDRESS " portion of the second command may be different.
@@ -60,14 +80,8 @@ Path of the secret key file: zweiterKnoten\keystore\UTC--2020-12-06T21-58-50.209
 
 #### COMMAND FOR TERMINAL 2
 
-./geth --datadir zweiterKnoten --unlock "8130066e626fe4B9eA60675696802ee653194926" --mine --port 30304 --bootnodes 
-"enode://32bd48689bd15e40f214e83c5c2882b034fdde0c849cb502b81dc7793f506c38afb6c08b38317371778e85b4c65dd5afb5dd59639c92f1ec8bfa1103786ec6f2@127.0.0.1:30303" 
---ipcdisable --allow-insecure-unlock
+`./geth --datadir zweiterKnoten --unlock "8130066e626fe4B9eA60675696802ee653194926" --mine --port 30304 --bootnodes "enode://32bd48689bd15e40f214e83c5c2882b034fdde0c849cb502b81dc7793f506c38afb6c08b38317371778e85b4c65dd5afb5dd59639c92f1ec8bfa1103786ec6f2@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock`
 
-![Geth3Generating2NewAccounts](Screenshots/Geth3Generating2NewAccounts.png)
-![Geth4NotesAfterAcctGen](Screenshots/Geth4NotesAfterAcctGen.png)
-![Geth5GeneratingGenesisBlock](Screenshots/Geth5GeneratingGenesisBlock.png)
-![Geth6ExportingGenesisConfig](Screenshots/Geth6ExportingGenesisConfig.png)
 ![Geth7DeletingHarmonyFile](Screenshots/Geth7DeletingHarmonyFile.png)
 ![Geth8InitNodeswGenJsonFile](Screenshots/Geth8InitNodeswGenJsonFile.png)
 ![Geth9MiningCodes](Screenshots/Geth9MiningCodes.png)
