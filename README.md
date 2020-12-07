@@ -2,20 +2,24 @@ AUTHOR: SCOTT FERGUSON
 DATE: Dec. 6th 2020
 
 # INSTALLATION PROCESS
-### --------------------
 
 First, we must download and install the newest Geth Tools and Software. This can be found on geth.ethereum.org.
 The download address is: https://geth.ethereum.org/downloads/
 
 Be sure to check wether you have a Mac or Windows OS, and wether it's 32 or 64-bit.
 
-You'll want to download these tools into a master directory/folder.
+##### This is the version I downloaded for Windows 64-bit OS.
+
+![Geth1](Screenshots/Geth1.png)
+
+##### You'll want to download these tools into a master directory/folder.
+
+![Geth2AfterUnzip](Screenshots/Geth2AfterUnzip.png)
 
 ### AFTER GETH TOOLS HAS BEEN INSERTED INTO BLOCKCHAIN FOLDER
 
 
 # 1) GENERATING ACCOUNTS
-### ----------------------
 
 To begin the network, we must generate two genesis nodes. 
 
@@ -34,12 +38,11 @@ Public address of the key:   0x8130066e626fe4B9eA60675696802ee653194926
 Path of the secret key file: zweiterKnoten\keystore\UTC--2020-12-06T21-58-50.209494000Z--8130066e626fe4b9ea60675696802ee653194926
 
 # 2) INITIALIZING EACH NODE
-### -------------------------
+
 ./geth --datadir MasterNode init zbankdeutschland.json
 ./geth --datadir zweiterKnoten init zbankdeutschland.json
 
 # 3) BEGIN MINING BLOCKS
-### ----------------------
 
 ##### NOTE:
     The "enode: ADDRESS " portion of the second command may be different.
@@ -104,7 +107,6 @@ Path of the secret key file: zweiterKnoten\keystore\UTC--2020-12-06T21-58-50.209
 * If that doesn't help make sure you are sending a large enough sum of ETH to see actual movement in the digits. You may have to click on the amount itself to see the full value down to the WEI.
 
 
-    ![Geth1](Screenshots/Geth1.png)
     ![Geth2AfterUnzip](Screenshots/Geth2AfterUnzip.png)
     ![Geth3Generating2NewAccounts](Screenshots/Geth3Generating2NewAccounts.png)
     ![Geth4NotesAfterAcctGen](Screenshots/Geth4NotesAfterAcctGen.png)
