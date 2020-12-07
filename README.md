@@ -29,10 +29,9 @@ cd into the directory, and run the following command:
 
 After typing in the command, you'll need to create a password. The passwords provided are not recommended, because they're incredibly weak. The program will give you a public addresses for the keys. COPY AND PASTE THESE SOMEWHERE. THEY'RE IMPORTANT
 
-MasterNode
-PW: admin
-Public address of the key:   0x5b02b4d444d5617455bf5dbdEe7446B6dBBFe723
-Path of the secret key file: MasterNode\keystore\UTC--2020-12-06T21-53-14.993467400Z--5b02b4d444d5617455bf5dbdee7446b6dbbfe723
+* FirstNodeName: MasterNode, Password: admin
+* Public address of the key: 0x5b02b4d444d5617455bf5dbdEe7446B6dBBFe723
+* Path of the secret key file: MasterNode\keystore\UTC--2020-12-06T21-53-14.993467400Z--5b02b4d444d5617455bf5dbdee7446b6dbbfe723
 
 ./geth --datadir zweiterKnoten account new
 
