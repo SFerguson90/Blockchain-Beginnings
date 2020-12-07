@@ -27,9 +27,7 @@ cd into the directory, and run the following command:
 * The fourth piece establishes it as an account
 * The fifth piece nominates that it's new.
 
-##### After typing in the command, you'll need to create a password
-##### The password provided is not recommended, because it's incredibly weak.
-##### The program will give you a public address for the key. COPY AND PASTE THIS SOMEWHERE. IT'S IMPORTANT
+After typing in the command, you'll need to create a password. The passwords provided are not recommended, because they're incredibly weak. The program will give you a public addresses for the keys. COPY AND PASTE THESE SOMEWHERE. THEY'RE IMPORTANT
 
 MasterNode
 PW: admin
@@ -67,8 +65,6 @@ Path of the secret key file: zweiterKnoten\keystore\UTC--2020-12-06T21-58-50.209
 "enode://32bd48689bd15e40f214e83c5c2882b034fdde0c849cb502b81dc7793f506c38afb6c08b38317371778e85b4c65dd5afb5dd59639c92f1ec8bfa1103786ec6f2@127.0.0.1:30303" 
 --ipcdisable --allow-insecure-unlock
 
-
-![Geth2AfterUnzip](Screenshots/Geth2AfterUnzip.png)
 ![Geth3Generating2NewAccounts](Screenshots/Geth3Generating2NewAccounts.png)
 ![Geth4NotesAfterAcctGen](Screenshots/Geth4NotesAfterAcctGen.png)
 ![Geth5GeneratingGenesisBlock](Screenshots/Geth5GeneratingGenesisBlock.png)
