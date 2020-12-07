@@ -50,9 +50,7 @@ COPY AND PASTE THESE SOMEWHERE. THEY'RE IMPORTANT
 
 ## 2) Establishing the Network
 
-Next, we'll want to establish the private network by linking it to the created genesis nodes. You'll need to create a name for the network, using all lowercase letters, no spaces, and no hyphens.
-
-For this example, we'll be creating a Proof-of-Authority network (Clique).
+Next, we'll want to establish the private network by linking it to the created genesis nodes. Type `puppeth` into the terminal to activate the application. You'll need to create a name for the network, using all lowercase letters, no spaces, and no hyphens. For this example, we'll be creating a Proof-of-Authority network (Clique).
 
 The terminal will look similar to the following picture:
 
@@ -60,12 +58,30 @@ The terminal will look similar to the following picture:
 
 ![Geth6ExportingGenesisConfig](Screenshots/Geth6ExportingGenesisConfig.png)
 
-## X) INITIALIZING EACH NODE
+## 3) INITIALIZING EACH NODE
+
+We have the network and node properties created. The next step is to combine the two. In order to do this, we will type the following commands:
 
 `./geth --datadir MasterNode init zbankdeutschland.json`
+and
 `./geth --datadir zweiterKnoten init zbankdeutschland.json`
 
-## X) BEGIN MINING BLOCKS
+It should look something like this:
+
+![Geth8InitNodeswGenJsonFile](Screenshots/Geth8InitNodeswGenJSonFile.png)
+
+## 4) BEGIN MINING BLOCKS
+
+Now that the nodes and network are connected in code, we can begin mining with the nodes using two terminals.
+Again, it's important to open two terminals to complete this step.
+
+#### COMMAND FOR TERMINAL 1
+
+`./geth --datadir MasterNode --unlock "5b02b4d444d5617455bf5dbdEe7446B6dBBFe723" --mine --rpc --allow-insecure-unlock`
+
+#### COMMAND FOR TERMINAL 2
+
+`./geth --datadir zweiterKnoten --unlock "8130066e626fe4B9eA60675696802ee653194926" --mine --port 30304 --bootnodes "enode://32bd48689bd15e40f214e83c5c2882b034fdde0c849cb502b81dc7793f506c38afb6c08b38317371778e85b4c65dd5afb5dd59639c92f1ec8bfa1103786ec6f2@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock`
 
 ##### NOTE:
     The "enode: ADDRESS " portion of the second command may be different.
@@ -73,17 +89,7 @@ The terminal will look similar to the following picture:
 	of the mining of the first block.
 
 
-
-#### COMMAND FOR TERMINAL 1
-
-./geth --datadir MasterNode --unlock "5b02b4d444d5617455bf5dbdEe7446B6dBBFe723" --mine --rpc --allow-insecure-unlock
-
-#### COMMAND FOR TERMINAL 2
-
-`./geth --datadir zweiterKnoten --unlock "8130066e626fe4B9eA60675696802ee653194926" --mine --port 30304 --bootnodes "enode://32bd48689bd15e40f214e83c5c2882b034fdde0c849cb502b81dc7793f506c38afb6c08b38317371778e85b4c65dd5afb5dd59639c92f1ec8bfa1103786ec6f2@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock`
-
-![Geth7DeletingHarmonyFile](Screenshots/Geth7DeletingHarmonyFile.png)
-![Geth8InitNodeswGenJsonFile](Screenshots/Geth8InitNodeswGenJsonFile.png)
+![Geth8InitNodeswGenJsonFile](Screenshots/Geth8InitNodeswGenJSonFile.png)
 ![Geth9MiningCodes](Screenshots/Geth9MiningCodes.png)
 ![Geth91PrivatePoARunning](Screenshots/Geth91PrivatePoARunning.png)
 ![Geth92Connected](Screenshots/Geth92Connected.png)
