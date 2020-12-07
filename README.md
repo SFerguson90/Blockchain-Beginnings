@@ -15,9 +15,21 @@ Be sure to check wether you have a Mac or Windows OS, and wether it's 32 or 64-b
 
 # 1) GENERATING ACCOUNTS
 
-To begin the network, we must generate two genesis nodes. 
+To begin the network, we must generate two genesis nodes. When entering these commands, you'll want to work from the directory that has the applications in it.
 
-./geth --datadir MasterNode account new
+cd into the directory, and run these commands:
+
+`./geth --datadir MasterNode account new`
+
+* "./geth" calls the geth application.
+* The --datadir flag creats a directory for the node
+* The third piece sets a name for your first node.
+* The fourth piece establishes it as an account
+* The fifth piece nominates that it's new.
+
+##### After typing in the command, you'll need to create a password
+##### The password provided is not recommended, because it's incredibly weak.
+##### The program will give you a public address for the key. COPY AND PASTE THIS SOMEWHERE. IT'S IMPORTANT
 
 MasterNode
 PW: admin
