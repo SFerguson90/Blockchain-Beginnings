@@ -1,6 +1,3 @@
-AUTHOR: SCOTT FERGUSON
-DATE: Dec. 6th 2020
-
 # INSTALLATION PROCESS
 
 First, we must download and install the newest Geth Tools and Software. This can be found on geth.ethereum.org.
@@ -15,9 +12,6 @@ Be sure to check wether you have a Mac or Windows OS, and wether it's 32 or 64-b
 ##### You'll want to download these tools into a master directory/folder.
 
 ![Geth2AfterUnzip](Screenshots/Geth2AfterUnzip.png)
-
-### AFTER GETH TOOLS HAS BEEN INSERTED INTO BLOCKCHAIN FOLDER
-
 
 # 1) GENERATING ACCOUNTS
 
