@@ -68,21 +68,21 @@ Path of the secret key file: zweiterKnoten\keystore\UTC--2020-12-06T21-58-50.209
 --ipcdisable --allow-insecure-unlock
 
 
-    ![Geth2AfterUnzip](Screenshots/Geth2AfterUnzip.png)
-    ![Geth3Generating2NewAccounts](Screenshots/Geth3Generating2NewAccounts.png)
-    ![Geth4NotesAfterAcctGen](Screenshots/Geth4NotesAfterAcctGen.png)
-    ![Geth5GeneratingGenesisBlock](Screenshots/Geth5GeneratingGenesisBlock.png)
-    ![Geth6ExportingGenesisConfig](Screenshots/Geth6ExportingGenesisConfig.png)
-    ![Geth7DeletingHarmonyFile](Screenshots/Geth7DeletingHarmonyFile.png)
-    ![Geth8InitNodeswGenJsonFile](Screenshots/Geth8InitNodeswGenJsonFile.png)
-    ![Geth9MiningCodes](Screenshots/Geth9MiningCodes.png)
-    ![Geth91PrivatePoARunning](Screenshots/Geth91PrivatePoARunning.png)
-    ![Geth92Connected](Screenshots/Geth92Connected.png)
-    ![Geth93FirstAccountRich](Screenshots/Geth93FirstAccountRich.png)
-    ![Geth94SendingMoney](Screenshots/Geth94SendingMoney.png)
-    ![Geth95SendingOneJeffBezos](Screenshots/Geth95SendingOneJeffBezos.png)
-    ![Geth96StatusBox](Screenshots/Geth96StatusBox.png)
-    ![Geth97SentTransactionFullStatus](Screenshots/Geth97SentTransactionFullStatus.png)
+![Geth2AfterUnzip](Screenshots/Geth2AfterUnzip.png)
+![Geth3Generating2NewAccounts](Screenshots/Geth3Generating2NewAccounts.png)
+![Geth4NotesAfterAcctGen](Screenshots/Geth4NotesAfterAcctGen.png)
+![Geth5GeneratingGenesisBlock](Screenshots/Geth5GeneratingGenesisBlock.png)
+![Geth6ExportingGenesisConfig](Screenshots/Geth6ExportingGenesisConfig.png)
+![Geth7DeletingHarmonyFile](Screenshots/Geth7DeletingHarmonyFile.png)
+![Geth8InitNodeswGenJsonFile](Screenshots/Geth8InitNodeswGenJsonFile.png)
+![Geth9MiningCodes](Screenshots/Geth9MiningCodes.png)
+![Geth91PrivatePoARunning](Screenshots/Geth91PrivatePoARunning.png)
+![Geth92Connected](Screenshots/Geth92Connected.png)
+![Geth93FirstAccountRich](Screenshots/Geth93FirstAccountRich.png)
+![Geth94SendingMoney](Screenshots/Geth94SendingMoney.png)
+![Geth95SendingOneJeffBezos](Screenshots/Geth95SendingOneJeffBezos.png)
+![Geth96StatusBox](Screenshots/Geth96StatusBox.png)
+![Geth97SentTransactionFullStatus](Screenshots/Geth97SentTransactionFullStatus.png)
 
 
 ---
