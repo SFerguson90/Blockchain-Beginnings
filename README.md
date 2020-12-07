@@ -9,7 +9,7 @@ Be sure to check wether you have a Mac or Windows OS, and wether it's 32 or 64-b
 
 ![Geth1](Screenshots/Geth1.png)
 
-##### You'll want to download these tools into a master directory/folder.
+##### You'll want to download these tools into a master directory/folder. They will initially be zipped, so you should unzip the directory and place the contents in the master directory.
 
 ![Geth2AfterUnzip](Screenshots/Geth2AfterUnzip.png)
 
@@ -19,7 +19,11 @@ To begin the network, we must generate two genesis nodes. When entering these co
 
 cd into the directory, and run the following command:
 
+NOTE: You can substitute `MasterNode` and `zweiterKnoten` for whatever name you prefer.
+
 `./geth --datadir MasterNode account new`
+
+`./geth --datadir zweiterKnoten account new`
 
 * "./geth" calls the geth application.
 * The --datadir flag creates a directory for the node
@@ -27,19 +31,19 @@ cd into the directory, and run the following command:
 * The fourth piece establishes it as an account
 * The fifth piece nominates that it's new.
 
-After typing in the command, you'll need to create a password. The passwords provided are not recommended, because they're incredibly weak. The program will give you a public addresses for the keys.
+After creating the node, you'll need to create a password to secure it. The passwords provided are not recommended, because they're incredibly weak. The program will give you a public addresses for the keys.
 
 COPY AND PASTE THESE SOMEWHERE. THEY'RE IMPORTANT
 
-* FirstNodeName: MasterNode
+Your file may look something like this
+
+* MasterNode
 * Password: admin
 * Public address of the key: 0x5b02b4d444d5617455bf5dbdEe7446B6dBBFe723
 * Path of the secret key file: MasterNode\keystore\UTC--2020-12-06T21-53-14.993467400Z--5b02b4d444d5617455bf5dbdee7446b6dbbfe723
 
-`./geth --datadir zweiterKnoten account new`
-
 * zweiterKnoten (second node)
-* PW: german
+* Password: german
 * Public address of the key:   0x8130066e626fe4B9eA60675696802ee653194926
 * Path of the secret key file: zweiterKnoten\keystore\UTC--2020-12-06T21-58-50.209494000Z--8130066e626fe4b9ea60675696802ee653194926
 
